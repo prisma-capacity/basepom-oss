@@ -9,7 +9,7 @@ To use this in OSS projects define a parent in your ```pom.xml```
 <parent>
 	<groupId>eu.prismacapacity</groupId>
 	<artifactId>basepom-oss</artifactId>
-	<version>0.0.1</version> <!-- or the current version -->
+	<version>0.1.0</version> <!-- or the current version -->
 </parent>
 ```
 ---
