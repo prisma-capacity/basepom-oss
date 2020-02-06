@@ -51,6 +51,7 @@
 		<spotless-maven-plugin.version>1.27.0</spotless-maven-plugin.version>
 		<etc>${session.executionRootDirectory}/src/etc</etc>
 		<formatter.config>${etc}/format</formatter.config>
+		<jersey-client.version>1.19.4</jersey-client.version>
 	</properties>
 	<build>
 		<plugins>
