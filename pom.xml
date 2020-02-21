@@ -10,7 +10,7 @@
   </parent>
   <groupId>eu.prismacapacity</groupId>
   <artifactId>basepom-oss</artifactId>
-  <version>0.1.4</version>
+  <version>0.1.5-SNAPSHOT</version>
   <packaging>pom</packaging>
   <organization>
     <name>PRISMA European Capacity Platform GmbH</name>
