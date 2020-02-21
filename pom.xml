@@ -361,9 +361,9 @@
             <version>${dependency-check-maven.version}</version>
             <executions>
               <execution>
+                <phase>verify</phase>
                 <goals>
                   <goal>check</goal>
-                  <phase>verify</phase>
                 </goals>
               </execution>
             </executions>
