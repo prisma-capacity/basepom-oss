@@ -45,7 +45,7 @@
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
     <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
-    <dependency-check-maven.version>6.0.4</dependency-check-maven.version>
+    <dependency-check-maven.version>6.0.5</dependency-check-maven.version>
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
     <directory-maven-plugin.version>0.3.1</directory-maven-plugin.version>
     <spotless-maven-plugin.version>2.4.1</spotless-maven-plugin.version>
