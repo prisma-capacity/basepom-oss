@@ -8,6 +8,22 @@
   <artifactId>basepom-oss</artifactId>
   <version>0.1.10-SNAPSHOT</version>
   <packaging>pom</packaging>
+
+  <!-- local to basepom, please override this info in your derived project -->
+
+  <name>PRISMA OSS BasePom</name>
+  <url>https://github.com/prisma-capacity/basepom-oss</url>
+  <description>This should serve as a default for OSS Projects published by PRISMA European Capacity Platform GmbH</description>
+  <developers>
+    <developer>
+      <id>uwe.schaefer</id>
+      <name>Uwe Schaefer</name>
+      <email>uwe.schaefer@prisma-capacity.eu</email>
+    </developer>
+  </developers>
+
+  <!-- / local to basepom, please override this info in your derived project -->
+
   <organization>
     <name>PRISMA European Capacity Platform GmbH</name>
     <url>http://www.prisma-capacity.eu</url>
