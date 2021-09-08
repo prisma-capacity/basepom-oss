@@ -4,7 +4,7 @@
 
   <groupId>eu.prismacapacity</groupId>
   <artifactId>basepom-oss</artifactId>
-  <version>0.1.12</version>
+  <version>0.1.13-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <!-- local to basepom, please override this info in your derived project -->
@@ -42,7 +42,7 @@
     <connection>scm:git:git@github.com:prisma-capacity/basepom-oss.git</connection>
     <developerConnection>scm:git:git@github.com:prisma-capacity/basepom-oss.git</developerConnection>
     <url>https://github.com/prisma-capacity/basepom-oss.git</url>
-    <tag>basepom-oss-0.1.12</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <!-- sane default -->
