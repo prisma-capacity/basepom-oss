@@ -58,13 +58,46 @@
     <dependency-check-maven.version>7.0.1</dependency-check-maven.version>
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
     <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
-    <spotless-maven-plugin.version>2.4.1</spotless-maven-plugin.version>
+    <spotless-maven-plugin.version>2.21.0</spotless-maven-plugin.version>
     <etc>${session.executionRootDirectory}/src/etc</etc>
     <formatter.config>${etc}/format</formatter.config>
     <jersey-client.version>1.19.4</jersey-client.version>
   </properties>
   <build>
     <plugins>
+      <plugin>
+        <groupId>com.diffplug.spotless</groupId>
+        <artifactId>spotless-maven-plugin</artifactId>
+        <version>${spotless-maven-plugin.version}</version>
+        <configuration>
+          <formats>
+            <format>
+              <includes>
+                <include>src/main/*.xml</include>
+                <include>pom.xml</include>
+              </includes>
+              <eclipseWtp>
+                <type>XML</type>
+                <version>4.7.3a</version>
+              </eclipseWtp>
+            </format>
+          </formats>
+          <java>
+            <toggleOffOn />
+            <importOrder>
+              <order>java,javax,org,com</order>
+            </importOrder>
+            <googleJavaFormat>
+              <version>1.8</version>
+              <style>GOOGLE</style>
+            </googleJavaFormat>
+            <licenseHeader>
+              <file>${basedir}/src/etc/header.txt</file>
+            </licenseHeader>
+          </java>
+          <ratchetFrom>origin/master</ratchetFrom>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>eu.prismacapacity</groupId>
         <artifactId>unixuid-maven-plugin</artifactId>
