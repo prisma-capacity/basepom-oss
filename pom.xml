@@ -366,9 +366,9 @@
               </execution>
             </executions>
             <configuration>
-	      <suppressionFile>suppressions.xml</suppressionFile>
+	      <suppressionFile>${basedir}/suppressions.xml</suppressionFile>
               <failOnError>true</failOnError>
-              <failBuildOnAnyVulnerability>true</failBuildOnAnyVulnerability>
+              <failBuildOnCVSS>8</failBuildOnCVSS>
               <skipRuntimeScope>true</skipRuntimeScope>
               <skipProvidedScope>true</skipProvidedScope>
               <skipTestScope>true</skipTestScope>
