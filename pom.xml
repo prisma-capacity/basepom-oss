@@ -366,7 +366,7 @@
               </execution>
             </executions>
             <configuration>
-	      <suppressionFile>${basedir}/suppressions.xml</suppressionFile>
+	      <suppressionFile>${session.executionRootDirectory}/suppressions.xml</suppressionFile>
               <failOnError>true</failOnError>
               <failBuildOnCVSS>8</failBuildOnCVSS>
               <skipRuntimeScope>true</skipRuntimeScope>
