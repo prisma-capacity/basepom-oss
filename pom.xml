@@ -366,6 +366,7 @@
               </execution>
             </executions>
             <configuration>
+	      <suppressionFile>suppressions.xml</suppressionFile>
               <failOnError>true</failOnError>
               <failBuildOnAnyVulnerability>true</failBuildOnAnyVulnerability>
               <skipRuntimeScope>true</skipRuntimeScope>
