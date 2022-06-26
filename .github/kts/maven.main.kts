@@ -29,7 +29,7 @@ public val workflowMaven: Workflow = workflow(
         uses(
             name = "Set up JDK 1.8",
             action = SetupJavaV3(
-                javaVersion = "1.8",
+                javaVersion = "8.0",
                 distribution = SetupJavaV3.Distribution.Temurin
             ),
         )
