@@ -1,6 +1,6 @@
 #!/usr/bin/env kotlin
 
-@file:DependsOn("it.krzeminski:github-actions-kotlin-dsl:0.19.0")
+@file:DependsOn("it.krzeminski:github-actions-kotlin-dsl:0.20.0")
 
 import it.krzeminski.githubactions.actions.actions.CheckoutV3
 import it.krzeminski.githubactions.actions.actions.SetupJavaV3
@@ -16,7 +16,7 @@ public val workflowMaven: Workflow = workflow(
     on = listOf(
         Push(),
     ),
-    sourceFile = Paths.get("maven.main.kts"),
+    sourceFile = Paths.get("./.github/kts/maven.main.kts"),
 ) {
     job(
         id = "build",
