@@ -95,7 +95,7 @@
               <file>${basedir}/src/etc/header.txt</file>
             </licenseHeader>
           </java>
-          <ratchetFrom>origin/master</ratchetFrom>
+          <ratchetFrom>origin/main</ratchetFrom>
         </configuration>
       </plugin>
       <plugin>
@@ -130,7 +130,7 @@
         <version>1.18.0</version>
         <configuration>
           <gitFlowConfig>
-            <developmentBranch>master</developmentBranch>
+            <developmentBranch>main</developmentBranch>
           </gitFlowConfig>
         </configuration>
       </plugin>
