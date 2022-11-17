@@ -53,12 +53,12 @@
     <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
     <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-    <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
+    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
     <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
-    <dependency-check-maven.version>7.1.2</dependency-check-maven.version>
+    <dependency-check-maven.version>7.3.1</dependency-check-maven.version>
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
     <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
-    <spotless-maven-plugin.version>2.27.1</spotless-maven-plugin.version>
+    <spotless-maven-plugin.version>2.27.2</spotless-maven-plugin.version>
     <etc>${session.executionRootDirectory}/src/etc</etc>
     <formatter.config>${etc}/format</formatter.config>
     <jersey-client.version>1.19.4</jersey-client.version>
@@ -114,7 +114,7 @@
       <plugin>
         <groupId>kr.motd.maven</groupId>
         <artifactId>os-maven-plugin</artifactId>
-        <version>1.7.0</version>
+        <version>1.7.1</version>
         <executions>
           <execution>
             <phase>initialize</phase>
@@ -127,7 +127,7 @@
       <plugin>
         <groupId>com.amashchenko.maven.plugin</groupId>
         <artifactId>gitflow-maven-plugin</artifactId>
-        <version>1.18.0</version>
+        <version>1.19.0</version>
         <configuration>
           <gitFlowConfig>
             <productionBranch>main</productionBranch>
