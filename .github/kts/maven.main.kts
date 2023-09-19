@@ -24,7 +24,7 @@ public val workflowMaven: Workflow = workflow(
     ) {
         uses(
             name = "Checkout",
-            action = CheckoutV3(),
+            action = CheckoutV4(),
         )
         uses(
             name = "Set up JDK 1.8",
