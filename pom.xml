@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>eu.prismacapacity</groupId>
@@ -11,7 +13,8 @@
 
   <name>PRISMA OSS BasePom</name>
   <url>https://github.com/prisma-capacity/basepom-oss</url>
-  <description>This should serve as a default for OSS Projects published by PRISMA European Capacity Platform GmbH</description>
+  <description>This should serve as a default for OSS Projects published
+    by PRISMA European Capacity Platform GmbH</description>
   <developers>
     <developer>
       <id>uwe.schaefer</id>
@@ -78,8 +81,12 @@
               </includes>
               <eclipseWtp>
                 <type>XML</type>
-                <version>4.7.3a</version>
+                <version>4.21.0</version>
               </eclipseWtp>
+              <indent>
+                <spaces>true</spaces>
+                <spacesPerTab>2</spacesPerTab>
+              </indent>
             </format>
           </formats>
           <java>
@@ -88,7 +95,7 @@
               <order>java,javax,org,com</order>
             </importOrder>
             <googleJavaFormat>
-              <version>1.8</version>
+              <version>1.17.0</version>
               <style>GOOGLE</style>
             </googleJavaFormat>
             <licenseHeader>
@@ -367,7 +374,7 @@
               </execution>
             </executions>
             <configuration>
-	      <suppressionFile>${session.executionRootDirectory}/suppressions.xml</suppressionFile>
+              <suppressionFile>${session.executionRootDirectory}/suppressions.xml</suppressionFile>
               <failOnError>true</failOnError>
               <failBuildOnCVSS>8</failBuildOnCVSS>
               <skipRuntimeScope>true</skipRuntimeScope>
