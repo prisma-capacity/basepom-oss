@@ -28,7 +28,7 @@ val workflowMaven = workflow(
         uses(
             name = "Set up JDK 1.8",
             action = SetupJavaV3(
-                javaVersion = "8.0",
+                javaVersion = "8",
                 distribution = SetupJavaV3.Distribution.Corretto
             ),
         )
