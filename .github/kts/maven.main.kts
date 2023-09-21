@@ -1,22 +1,21 @@
 #!/usr/bin/env kotlin
 
-@file:DependsOn("it.krzeminski:github-actions-kotlin-dsl:0.20.0")
+@file:DependsOn("io.github.typesafegithub:github-workflows-kt:1.1.0")
 
-import it.krzeminski.githubactions.actions.actions.CheckoutV3
-import it.krzeminski.githubactions.actions.actions.SetupJavaV3
-import it.krzeminski.githubactions.domain.RunnerType
-import it.krzeminski.githubactions.domain.Workflow
-import it.krzeminski.githubactions.domain.triggers.Push
-import it.krzeminski.githubactions.dsl.workflow
-import it.krzeminski.githubactions.yaml.writeToFile
+import io.github.typesafegithub.workflows.actions.actions.CheckoutV4
+import io.github.typesafegithub.workflows.actions.actions.SetupJavaV3
+import io.github.typesafegithub.workflows.domain.RunnerType
+import io.github.typesafegithub.workflows.domain.triggers.Push
+import io.github.typesafegithub.workflows.dsl.workflow
+import io.github.typesafegithub.workflows.yaml.writeToFile
 import java.nio.file.Paths
 
-public val workflowMaven: Workflow = workflow(
+val workflowMaven = workflow(
     name = "Java CI",
     on = listOf(
         Push(),
     ),
-    sourceFile = Paths.get("./.github/kts/maven.main.kts"),
+    sourceFile =  __FILE__.toPath(),
 ) {
     job(
         id = "build",
@@ -24,12 +23,12 @@ public val workflowMaven: Workflow = workflow(
     ) {
         uses(
             name = "Checkout",
-            action = CheckoutV3(),
+            action = CheckoutV4(),
         )
         uses(
             name = "Set up JDK 1.8",
             action = SetupJavaV3(
-                javaVersion = "8.0",
+                javaVersion = "8",
                 distribution = SetupJavaV3.Distribution.Corretto
             ),
         )
