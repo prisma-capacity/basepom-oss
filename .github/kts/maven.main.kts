@@ -15,7 +15,7 @@ val workflowMaven = workflow(
     on = listOf(
         Push(),
     ),
-    sourceFile = Paths.get("./maven.main.kts"),
+    sourceFile = Paths.get(".github/kts/maven.main.kts"),
 ) {
     job(
         id = "build",
