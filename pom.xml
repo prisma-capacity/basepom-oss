@@ -99,7 +99,7 @@
               <style>GOOGLE</style>
             </googleJavaFormat>
             <licenseHeader>
-              <file>${basedir}/src/etc/header.txt</file>
+              <file>${etc}/header.txt</file>
             </licenseHeader>
           </java>
           <ratchetFrom>origin/main</ratchetFrom>
