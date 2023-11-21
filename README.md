@@ -9,7 +9,6 @@
 <a href="https://www.apache.org/licenses/LICENSE-2.0">
     <img class="inline" src="https://img.shields.io/badge/license-ASL2-green.svg?style=flat">
 </a>
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=prisma-capacity/basepom-oss)](https://dependabot.com)
 
 This POM provides some reasonable default plugin configurations. In order to disable preconfigured plugins, add a .noXXXX File to the root of your repository. (See pom.xml for exact filenames)
 
