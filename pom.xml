@@ -6,7 +6,7 @@
 
   <groupId>eu.prismacapacity</groupId>
   <artifactId>basepom-oss</artifactId>
-  <version>0.2.16-SNAPSHOT</version>
+  <version>0.2.16</version>
   <packaging>pom</packaging>
 
   <!-- local to basepom, please override this info in your derived project -->
