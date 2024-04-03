@@ -3,7 +3,7 @@
 @file:DependsOn("io.github.typesafegithub:github-workflows-kt:1.13.0")
 
 import io.github.typesafegithub.workflows.actions.actions.CheckoutV4
-import io.github.typesafegithub.workflows.actions.actions.SetupJavaV3
+import io.github.typesafegithub.workflows.actions.actions.SetupJavaV4
 import io.github.typesafegithub.workflows.domain.RunnerType
 import io.github.typesafegithub.workflows.domain.triggers.Push
 import io.github.typesafegithub.workflows.dsl.workflow
@@ -27,9 +27,9 @@ val workflowMaven = workflow(
         )
         uses(
             name = "Set up JDK 1.8",
-            action = SetupJavaV3(
+            action = SetupJavaV4(
                 javaVersion = "8",
-                distribution = SetupJavaV3.Distribution.Corretto
+                distribution = SetupJavaV4.Distribution.Corretto
             ),
         )
         run(
