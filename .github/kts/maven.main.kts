@@ -1,13 +1,19 @@
 #!/usr/bin/env kotlin
 
-@file:DependsOn("io.github.typesafegithub:github-workflows-kt:1.15.0")
+@file:DependsOn("io.github.typesafegithub:github-workflows-kt:3.0.1")
 
-import io.github.typesafegithub.workflows.actions.actions.CheckoutV4
-import io.github.typesafegithub.workflows.actions.actions.SetupJavaV4
+@file:Repository("https://repo.maven.apache.org/maven2/")
+@file:Repository("https://bindings.krzeminski.it")
+
+@file:DependsOn("actions:checkout:v4")
+@file:DependsOn("actions:setup-java:v4")
+
+import io.github.typesafegithub.workflows.actions.actions.Checkout
+import io.github.typesafegithub.workflows.actions.actions.SetupJava
+
 import io.github.typesafegithub.workflows.domain.RunnerType
 import io.github.typesafegithub.workflows.domain.triggers.Push
 import io.github.typesafegithub.workflows.dsl.workflow
-import io.github.typesafegithub.workflows.yaml.writeToFile
 import java.nio.file.Paths
 
 val workflowMaven = workflow(
@@ -15,7 +21,7 @@ val workflowMaven = workflow(
     on = listOf(
         Push(),
     ),
-    sourceFile =  __FILE__.toPath(),
+    sourceFile =  __FILE__,
 ) {
     job(
         id = "build",
@@ -23,13 +29,13 @@ val workflowMaven = workflow(
     ) {
         uses(
             name = "Checkout",
-            action = CheckoutV4(),
+            action = Checkout(),
         )
         uses(
             name = "Set up JDK 1.8",
-            action = SetupJavaV4(
+            action = SetupJava(
                 javaVersion = "8",
-                distribution = SetupJavaV4.Distribution.Corretto
+                distribution = SetupJava.Distribution.Corretto
             ),
         )
         run(
@@ -40,4 +46,3 @@ val workflowMaven = workflow(
 
 }
 
-workflowMaven.writeToFile()
