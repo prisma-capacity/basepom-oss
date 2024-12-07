@@ -53,7 +53,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <!-- plugin versions -->
     <maven-clean-plugin.version>3.4.0</maven-clean-plugin.version>
-    <maven-javadoc-plugin.version>3.11.1</maven-javadoc-plugin.version>
+    <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
     <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
     <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
