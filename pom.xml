@@ -61,7 +61,7 @@
     <dependency-check-maven.version>12.1.9</dependency-check-maven.version>
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
     <directory-maven-plugin.version>1.0</directory-maven-plugin.version>
-    <spotless-maven-plugin.version>2.46.1</spotless-maven-plugin.version>
+    <spotless-maven-plugin.version>3.1.0</spotless-maven-plugin.version>
     <etc>${session.executionRootDirectory}/src/etc</etc>
     <formatter.config>${etc}/format</formatter.config>
     <jersey-client.version>1.19.4</jersey-client.version>
