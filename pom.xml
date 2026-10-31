@@ -390,6 +390,7 @@
               <skipProvidedScope>true</skipProvidedScope>
               <skipTestScope>true</skipTestScope>
               <skipSystemScope>true</skipSystemScope>
+              <nvdApiKeyEnvironmentVariable>NVD_API_KEY</nvdApiKeyEnvironmentVariable>
             </configuration>
           </plugin>
         </plugins>
